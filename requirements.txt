@@ -1,6 +1,4 @@
 altair==5.4.1
-annotated-types @ file:///C:/b/abs_0dmaoyhhj3/croot/annotated-types_1709542968311/work
-anyio @ file:///C:/b/abs_31grv7a7bl/croot/anyio_1729121290992/work
 attrs==24.2.0
 blinker==1.8.2
 cachetools==5.5.0
@@ -11,7 +9,6 @@ colorama==0.4.6
 customgpt-client==1.2.7
 dnspython==2.7.0
 email_validator==2.2.0
-fastapi @ file:///C:/b/abs_96d9k5nptn/croot/fastapi_1724789169469/work
 fastapi-cli==0.0.5
 gitdb==4.0.11
 GitPython==3.1.43
