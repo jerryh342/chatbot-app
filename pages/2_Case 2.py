@@ -3,7 +3,7 @@ import streamlit as st
 from components.casePage import CasePage
 from schema.schema import Case
 
-with open('C:\\Users\\Jerry H\\Desktop\\chatbot-app\\data\\cases\\case2.yml', 'r') as file:
+with open('./data/cases/case2.yml', 'r') as file:
     currentCaseYml = yaml.safe_load(file)['case']
 st.session_state.currentStage = 1
 
