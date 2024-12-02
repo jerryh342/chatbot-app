@@ -33,8 +33,6 @@ pandas==2.2.3
 pillow==10.4.0
 protobuf==5.28.2
 pyarrow==17.0.0
-pydantic @ file:///C:/b/abs_b7acb4hnl_/croot/pydantic_1725040540545/work
-pydantic_core @ file:///C:/b/abs_3ax4s6v28p/croot/pydantic-core_1724790490828/work
 pydeck==0.9.1
 Pygments==2.18.0
 python-dateutil==2.9.0.post0
@@ -49,16 +47,13 @@ rpds-py==0.20.0
 shellingham==1.5.4
 six==1.16.0
 smmap==5.0.1
-sniffio @ file:///C:/b/abs_3akdewudo_/croot/sniffio_1705431337396/work
 sseclient==0.0.27
 sseclient-py==1.7.2
-starlette @ file:///C:/b/abs_584arzjt6c/croot/starlette-recipe_1724683216853/work
 streamlit==1.39.0
 tenacity==9.0.0
 toml==0.10.2
 tornado==6.4.1
 typer==0.12.5
-typing_extensions @ file:///C:/b/abs_0as9mdbkfl/croot/typing_extensions_1715268906610/work
 tzdata==2024.2
 urllib3==2.2.3
 uvicorn==0.32.0
