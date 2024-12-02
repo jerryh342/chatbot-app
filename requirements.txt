@@ -1,0 +1,67 @@
+altair==5.4.1
+annotated-types @ file:///C:/b/abs_0dmaoyhhj3/croot/annotated-types_1709542968311/work
+anyio @ file:///C:/b/abs_31grv7a7bl/croot/anyio_1729121290992/work
+attrs==24.2.0
+blinker==1.8.2
+cachetools==5.5.0
+certifi==2024.8.30
+charset-normalizer==3.4.0
+click==8.1.7
+colorama==0.4.6
+customgpt-client==1.2.7
+dnspython==2.7.0
+email_validator==2.2.0
+fastapi @ file:///C:/b/abs_96d9k5nptn/croot/fastapi_1724789169469/work
+fastapi-cli==0.0.5
+gitdb==4.0.11
+GitPython==3.1.43
+h11==0.14.0
+httpcore==1.0.6
+httptools==0.6.4
+httpx==0.27.2
+idna==3.10
+Jinja2==3.1.4
+jsonschema==4.23.0
+jsonschema-specifications==2024.10.1
+markdown-it-py==3.0.0
+MarkupSafe==3.0.1
+mdurl==0.1.2
+narwhals==1.9.4
+numpy==2.1.2
+packaging==24.1
+pandas==2.2.3
+pillow==10.4.0
+protobuf==5.28.2
+pyarrow==17.0.0
+pydantic @ file:///C:/b/abs_b7acb4hnl_/croot/pydantic_1725040540545/work
+pydantic_core @ file:///C:/b/abs_3ax4s6v28p/croot/pydantic-core_1724790490828/work
+pydeck==0.9.1
+Pygments==2.18.0
+python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
+python-multipart==0.0.16
+pytz==2024.2
+PyYAML==6.0.2
+referencing==0.35.1
+requests==2.32.3
+rich==13.9.2
+rpds-py==0.20.0
+shellingham==1.5.4
+six==1.16.0
+smmap==5.0.1
+sniffio @ file:///C:/b/abs_3akdewudo_/croot/sniffio_1705431337396/work
+sseclient==0.0.27
+sseclient-py==1.7.2
+starlette @ file:///C:/b/abs_584arzjt6c/croot/starlette-recipe_1724683216853/work
+streamlit==1.39.0
+tenacity==9.0.0
+toml==0.10.2
+tornado==6.4.1
+typer==0.12.5
+typing_extensions @ file:///C:/b/abs_0as9mdbkfl/croot/typing_extensions_1715268906610/work
+tzdata==2024.2
+urllib3==2.2.3
+uvicorn==0.32.0
+watchdog==5.0.3
+watchfiles==0.24.0
+websockets==13.1
