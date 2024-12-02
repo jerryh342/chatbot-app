@@ -1,0 +1,38 @@
+POST https://app.customgpt.ai/api/v1/projects/{projectId}/conversations - Get conversation ID
+{
+    "data": {
+        "project_id": 45546,
+        "name": "test-convo",
+        "created_by": 1406588,
+        "session_id": "7ae1c7c6-620e-4f79-bafe-7c017fdfd417",
+        "updated_at": "2024-10-28T09:43:16.000000Z",
+        "created_at": "2024-10-28T09:43:16.000000Z",
+        ### "id": 2504546,
+        "project": {
+            "id": 45546,
+            "project_name": "My Project_jerry",
+            "sitemap_path": null,
+            "user_id": 1406588,
+            "is_chat_active": true,
+            "created_at": "2024-10-21T02:43:45.000000Z",
+            "updated_at": "2024-10-24 03:01:38",
+            "shareable_slug": "4b44af875438654f5ca45c25090f7018",
+            "is_shared": false,
+            "deleted_at": null,
+            "type": "UPLOAD_TO_S3",
+            "team_id": 1406557,
+            "metadata": {
+                "firedEvents": {
+                    "APIUsed": true,
+                    "BotDeployed": true
+                }
+            },
+            "are_licenses_allowed": false
+        }
+    },
+    "status": "success"
+}
+
+POST https://app.customgpt.ai/api/v1/projects/{projectId}/conversations/{sessionId}/messages
+https://docs.customgpt.ai/reference/post_api-v1-projects-projectid-conversations-sessionid-messages
+data -> openai_response

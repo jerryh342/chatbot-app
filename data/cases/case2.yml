@@ -1,0 +1,26 @@
+case:
+  caseNum: 2
+  caseDesc: "
+    ### Situation  \n
+    Case 2 placeholder  \n
+    A 35-year-old male brought in by ambulance to the emergency department after a severe motor vehicle accident.  \n
+    The patient was ejected from the vehicle. There was no witnessed loss of consciousness, but the patient was increasingly confused during transport.   \n
+    On arrival, he is confused and unable to give a coherent history. He has obvious injuries to his chest, with bruising and paradoxical movements.  Blood is seen over his scalp. His skin is pale and clammy and he has swelling of the right leg.  \n
+    ### Vital signs  \n
+    BP 95/60 mmHg; Pulse 130 bpm (sinus rhythm); Respiratory rate: 28 breaths/min; SpO2 88% on RA  \n
+    ### Immediate assessment  \n
+    *  The patient is struggling to maintain his airway and has labored breathing. He is moaning and not speaking coherently.  \n
+    *  Paradoxical chest movements are noted on the right side. There is decreased air entry on the right side. Oxygen saturation remains low despite now given high flow supplemental oxygen.  \n
+    *  No obvious external bleeding.  The carotid and femoral pulses are palpable. The patient's hands and feet are cold and his skin is pale. Capillary refill > 3 seconds.  \n
+    *  Pupils equal and reactive to light. GCS 10 (E3V3M4)  \n
+    *  Multiple bruises and abrasions noted over his scalp, chest and legs. Right leg looks swollen  \n
+    ### Immediate management  \n
+    Two large-bore peripheral cannulas are inserted and cardiac monitoring is established."
+
+  questions:
+    - question: "Should you secure the airway or obtain imaging first? Please explain your answer:"
+      answer: "Secure airway first since the respiratory status is concerning and oxygen saturation is low despite high-flow oxygen."
+    - question: "Which tube should be used to secure the airway and how would you confirm the correct placement?"
+      answer: "The correct tube should be endotracheal tube. Placement of the tube should first be confirmed by auscultation, followed by CXR imaging."
+    - question: "You order a chest X-ray, and upon review you find a visible pleural line on the lower left part of the lung, with no lung markings beyond it. What condition is the most likely cause for this feature?"
+      answer: "Pneumothorax"

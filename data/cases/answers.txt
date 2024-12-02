@@ -1,0 +1,6 @@
+q1: Secure the airway first to ensure the patient's condition will stabilize.
+q2: Nasogastric tube probably? Not sure on how to confirm the placement. 
+q3: Pneumothorax
+q4: Probably the bronchus, the other one not very sure
+q5: Can determine if there is neck flexion or extension.
+q6: tracheal mucosal ischemia
