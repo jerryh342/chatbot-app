@@ -7,7 +7,7 @@ from sseclient import SSEClient
 
 
 def getAuthToken() -> str:
-    API_KEY = os.getenv('CUSTOMGPT_API_KEY')
+    API_KEY = st.secrets['CUSTOMGPT_API_KEY']
     return f"Bearer {API_KEY}"
 
 
@@ -30,7 +30,7 @@ def getNewConversationID() -> str:
 
 
 def updateConversation(prompt: str):
-    projectID = os.getenv("CUSTOMGPT_PRJ_ID")
+    projectID = st.secrets['CUSTOMGPT_PRJ_ID']
     sessionID = st.session_state.sessionID
     authToken = getAuthToken()
     url = f"https://app.customgpt.ai/api/v1/projects/{projectID}/conversations/{sessionID}/messages?stream=true"
