@@ -31,4 +31,5 @@ pg = st.navigation(pages)
 
 # Page config
 st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide", page_icon="./data/logo.jpg")
+st.logo("./data/logo.jpg", size="large")
 pg.run()
