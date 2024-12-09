@@ -22,7 +22,7 @@ if 'sessionID' not in st.session_state:
 homePage = st.Page("home.py", title="Home")
 pages = [homePage]
 
-casePaths = glob.glob("./cases/*.py")
+casePaths = sorted(glob.glob("./cases/*.py"))
 for idx, casePath in enumerate(casePaths):
     page = st.Page(casePath, title=f"Case {idx+1}")
     pages.append(page)
