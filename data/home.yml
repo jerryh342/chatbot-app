@@ -1,0 +1,14 @@
+home:
+  description: "
+  We propose a chatbot-integrated case simulation to enhance students' understanding on lines and tubes in radiology based on active learning principles.  \n 
+  Students will be briefed with the scenario and asked to answer case-specific questions drafted by radiologists, and the chatbot will act as a personal tutor to provide a personalized evaluation of the students' performances.  \n
+  We expect that this can enhance the learning experience and make case simulations a more accessible exercise for students.
+  "
+  instructions: "
+  - Select a case and read through the background  \n
+  - Answer questions by filling in the text box with your own box  \n
+  - Submit your answers and review the chatbot's evaluation  \n
+  - Engage in follow-up discussion or a question set with increased difficulty
+  
+  "
+  acknowledgments: "This project was supported by the *University Grants Committee (UGC) Teaching Development and Language Enhancement Grant 2022-25*."

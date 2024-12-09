@@ -1,5 +1,6 @@
 case:
   caseNum: 2
+  maxStage: 1
   caseDesc: "
     ### Situation  \n
     Case 2 placeholder  \n
@@ -18,9 +19,10 @@ case:
     Two large-bore peripheral cannulas are inserted and cardiac monitoring is established."
 
   questions:
-    - question: "Should you secure the airway or obtain imaging first? Please explain your answer:"
-      answer: "Secure airway first since the respiratory status is concerning and oxygen saturation is low despite high-flow oxygen."
-    - question: "Which tube should be used to secure the airway and how would you confirm the correct placement?"
-      answer: "The correct tube should be endotracheal tube. Placement of the tube should first be confirmed by auscultation, followed by CXR imaging."
-    - question: "You order a chest X-ray, and upon review you find a visible pleural line on the lower left part of the lung, with no lung markings beyond it. What condition is the most likely cause for this feature?"
-      answer: "Pneumothorax"
+    stage1:
+      - question: "Should you secure the airway or obtain imaging first? Please explain your answer:"
+        answer: "Secure airway first since the respiratory status is concerning and oxygen saturation is low despite high-flow oxygen."
+      - question: "Which tube should be used to secure the airway and how would you confirm the correct placement?"
+        answer: "The correct tube should be endotracheal tube. Placement of the tube should first be confirmed by auscultation, followed by CXR imaging."
+      - question: "You order a chest X-ray, and upon review you find a visible pleural line on the lower left part of the lung, with no lung markings beyond it. What condition is the most likely cause for this feature?"
+        answer: "Pneumothorax"

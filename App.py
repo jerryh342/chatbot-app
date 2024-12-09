@@ -1,10 +1,9 @@
-from dotenv import load_dotenv
+import glob
+
 import streamlit as st
 
 from components.server import getNewConversationID
-# Load env file
-load_dotenv("chatbot.env")
-st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide")
+
 # Initialize session state variables
 if "messages" not in st.session_state:
     st.session_state.messages = [
@@ -18,14 +17,18 @@ if "currentCase" not in st.session_state:
 
 if 'sessionID' not in st.session_state:
     st.session_state.sessionID = 2514216  # getNewConversationID()
-    # st.session_state.sessionID = 2514216
 
-# Homepage design
-st.title("Case Simulation Chatbot Demo")
-st.markdown("CUHK DIIR")
-st.subheader("Description")
-st.markdown("Description on the app; Current web app for DEMO purposes only")
-st.subheader("Instructions")
-st.markdown("Instructions on how to use the app")
-st.subheader("Acknowledgments")
-st.markdown("Acknowledgments")
+# Set up pages and navigation
+homePage = st.Page("home.py", title="Home")
+pages = [homePage]
+
+casePaths = glob.glob("./cases/*.py")
+for idx, casePath in enumerate(casePaths):
+    page = st.Page(casePath, title=f"Case {idx+1}")
+    pages.append(page)
+
+pg = st.navigation(pages)
+
+# Page config
+st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide", page_icon="./data/logo.jpg")
+pg.run()
