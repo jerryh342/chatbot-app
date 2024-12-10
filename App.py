@@ -31,6 +31,5 @@ pg = st.navigation(pages)
 
 # Page config
 st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide", page_icon="./data/logo.jpg")
-st.html('<link rel="apple-touch-icon" href="https: // cuhkdri-chatbotapp.streamlit.app: 443/~/+/media/5f1edb7658699eb9c2d9cb7fb91b11e11d6a7e7211db272456a1a3c8.jpg" />')
 st.logo("./data/logo.jpg", size="large")
 pg.run()
