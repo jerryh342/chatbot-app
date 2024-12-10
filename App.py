@@ -3,7 +3,6 @@ import glob
 import streamlit as st
 
 from components.server import getNewConversationID
-from tools.customIcon import _customize_index_html
 
 # Initialize session state variables
 if "messages" not in st.session_state:
@@ -32,6 +31,6 @@ pg = st.navigation(pages)
 
 # Page config
 st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide", page_icon="./data/logo.jpg")
+st.html('<head><link rel="apple-touch-icon" href="https: // cuhkdri-chatbotapp.streamlit.app: 443/~/+/media/5f1edb7658699eb9c2d9cb7fb91b11e11d6a7e7211db272456a1a3c8.jpg" /></head>')
 st.logo("./data/logo.jpg", size="large")
-_customize_index_html()
 pg.run()
