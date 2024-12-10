@@ -30,6 +30,6 @@ for idx, casePath in enumerate(casePaths):
 pg = st.navigation(pages)
 
 # Page config
-st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide", page_icon="./data/logo.jpg")
-st.logo("./data/logo.jpg", size="large")
+st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide", page_icon="./data/logo.png")
+st.logo("./data/logo.png", size="large")
 pg.run()
