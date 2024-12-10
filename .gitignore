@@ -167,3 +167,6 @@ cython_debug/
 
 #api reference
 api_reference.txt
+
+#local docs
+git_ignored
