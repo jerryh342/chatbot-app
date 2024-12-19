@@ -47,10 +47,13 @@ class CasePage():
             with self.imagesTab:
                 col1, col2 = st.columns([0.5, 0.5])
                 with col1:
-                    st.image("./data/cases/imgs/cxr-ett-normal.jpg", caption="Normal ETT")
+                    st.image("./data/cases/imgs/cxr-ett-normal.png", caption="Normal ETT", width=512)
+                    st.markdown(
+                        'Benzocaine-Induced Cyanosis - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/A-chest-x-ray-showing-correct-endotracheal-tube-placement-and-no-acute-lung-pathology_fig2_303797877 [accessed 10 Dec 2024]')
                 with col2:
-                    st.image("./data/cases/imgs/rmb.Seq1.Ser1.Img1.jpg",
-                             caption="Abnormal ETT, tip in right main bronchus")
+                    st.image("./data/cases/imgs/cxr-ett-abnormal.png",
+                             caption=["Abnormal ETT, tip in right main bronchus; Endotracheal tube: red dotted line; Trachea: blue dotted line; Nasogastric tube: yellow dotted line"], width=512)
+                    st.html('Case courtesy of Frank Gaillard, <a href="https://radiopaedia.org/?lang=us">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/15330?lang=us">rID: 15330</a>')
 
     def loadScenarioForm(self, caseNum: int, questions: list):
         with st.form(key=f"case{caseNum}Form"):

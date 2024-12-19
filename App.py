@@ -45,5 +45,7 @@ for idx, casePath in enumerate(casePaths):
     pages.append(page)
 
 # Page config
+
 pg = st.navigation(pages)
+
 pg.run()
