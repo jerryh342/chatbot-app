@@ -2,7 +2,7 @@ langchain_core
 langchain_mistralai
 langchain_pinecone
 langgraph
-pinecon
+pinecone
 PyYAML
 Requests
 sseclient
