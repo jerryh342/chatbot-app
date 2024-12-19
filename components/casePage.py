@@ -47,9 +47,9 @@ class CasePage():
             with self.imagesTab:
                 col1, col2 = st.columns([0.5, 0.5])
                 with col1:
-                    st.image("./data/cases/images/cxr-ett-normal.jpg", caption="Normal ETT")
+                    st.image("./data/cases/imgs/cxr-ett-normal.jpg", caption="Normal ETT")
                 with col2:
-                    st.image("./data/cases/images/rmb.Seq1.Ser1.Img1.jpg",
+                    st.image("./data/cases/imgs/rmb.Seq1.Ser1.Img1.jpg",
                              caption="Abnormal ETT, tip in right main bronchus")
 
     def loadScenarioForm(self, caseNum: int, questions: list):
