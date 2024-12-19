@@ -164,3 +164,12 @@ cython_debug/
 
 # secrets.toml
 .streamlit/secrets.toml
+
+#api reference
+api_reference.txt
+
+#src_docs
+data/src_docs
+
+#local_docs 
+git_ignored
