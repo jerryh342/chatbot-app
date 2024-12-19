@@ -1,3 +1,4 @@
+# For communication with CustomGPT API
 import os
 import time
 import requests
@@ -12,7 +13,7 @@ def getAuthToken() -> str:
 
 
 def getNewConversationID() -> str:
-    projectID = os.getenv("CUSTOMGPT_PRJ_ID")
+    projectID = st.secrets['CUSTOMGPT_PRJ_ID']
     authToken = getAuthToken()
     url = f"https://app.customgpt.ai/api/v1/projects/{projectID}/conversations"
     headers = {

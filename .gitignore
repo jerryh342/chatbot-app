@@ -167,9 +167,13 @@ cython_debug/
 
 #api reference
 api_reference.txt
+stream.txt
 
 #src_docs
 data/src_docs
 
 #local_docs 
-git_ignored
+local_docs 
+
+#utils
+utils
