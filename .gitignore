@@ -182,4 +182,5 @@ utils
 
 #local docs
 git_ignored
+data/cases/case_template.docx
 
