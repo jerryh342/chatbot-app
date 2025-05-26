@@ -27,7 +27,7 @@ class LangChainCasePage(CasePage):
         st.session_state.graph.update_state(config=self.config, values={
                                             "messages": [RemoveMessage(id=m.id) for m in chat_history[1:]]})
         st.session_state.messages = [
-            {"role": "assistant", "content": "Hi, I'm Dr.ChestXpert. You can submit your answers for this case to me and I'll evaluate them! \n Feel free to ask me questions related to lines and tubes on CXRs as well."}]
+            {"role": "assistant", "content": "Hi, I'm Dr.XRLiA. You can submit your answers for this case to me and I'll evaluate them! \n Feel free to ask me questions related to lines and tubes on CXRs as well."}]
 
     def getMessageContent(self, generator):
         for chunk in generator:

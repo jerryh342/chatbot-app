@@ -11,7 +11,7 @@ from schema.schema import Case
 class CasePage():
     def __init__(self, case: Case) -> None:
         self.currentCase = case  # Update current case number
-        st.title(f"Case {self.currentCase.caseNum}")
+        st.title(f"Game {self.currentCase.caseNum}")
         self.bgTab, self.questionsTab, self.imagesTab = st.tabs(["Background", "Questions", "CXR Images"])
         with self.bgTab:
             st.markdown(case.caseDesc)
@@ -34,13 +34,13 @@ class CasePage():
                 with self.chatbotCol:
                     col1, col2 = st.columns([0.7, 0.3])
                     with col1:
-                        st.markdown("**Talk to Dr. ChestXpert**")
+                        st.markdown("**Talk to Dr. XRLiA**")
                     with col2:
                         st.button("Clear Conversation", "clearConversationBtn", on_click=self.clearConversation)
                     self.chatContainer = st.container(height=520, border=True)
                     self.loadConvoWindow()
             else:
-                st.markdown("**Talk to Dr. ChestXpert**")
+                st.markdown("**Talk to Dr. XRLiA**")
                 st.button("Clear Conversation", "clearConversationBtn", on_click=self.clearConversation)
                 self.chatContainer = st.container(height=520, border=True)
                 self.loadConvoWindow()
@@ -89,7 +89,7 @@ class CasePage():
 
     def onSubmitScenarioForm(self) -> None:
         prefix = f"case{self.currentCase.caseNum}Question"
-        prompt = f"Stage {st.session_state.currentStage} \n"
+        prompt = f"Part {st.session_state.currentStage} \n"
         for idx, key in enumerate(sorted([key for key in st.session_state.keys() if prefix in key])):
             question = self.currentCase.questions[f'stage{st.session_state.currentStage}'][idx]['question']
             answer = self.currentCase.questions[f'stage{st.session_state.currentStage}'][idx]['answer']

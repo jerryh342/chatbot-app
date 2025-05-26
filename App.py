@@ -11,7 +11,7 @@ st.set_page_config(page_title="DIIR Chatbot Demo", layout="wide")
 graph = build_graph()
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Hi, I'm Dr.ChestXpert. You can submit your answers for this case to me and I'll evaluate them! \n Feel free to ask me questions related to lines and tubes on CXRs as well."}]
+        {"role": "assistant", "content": "Hi, I'm Dr.XRLiA. You can submit your answers for this case to me and I'll evaluate them! \n Feel free to ask me questions related to lines and tubes on CXRs as well."}]
 
 if "currentStage" not in st.session_state:
     st.session_state.currentStage = 1
@@ -41,9 +41,10 @@ pages = [homePage]
 
 casePaths = sorted(glob.glob("./cases/*.py"))
 for idx, casePath in enumerate(casePaths):
-    page = st.Page(casePath, title=f"Case {idx+1}")
+    page = st.Page(casePath, title=f"Game {idx+1}")
     pages.append(page)
 
+# pages.append(st.Page("./components/embedding.py", title="Embedding"))
 # Page config
 
 pg = st.navigation(pages)
