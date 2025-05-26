@@ -17,8 +17,7 @@ from langchain_core.prompts.chat import ChatPromptTemplate
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_core.rate_limiters import InMemoryRateLimiter
-
-# from .embedding import MistralAIEmbeddingsWithPause
+from .embedding import MistralAIEmbeddingsWithPause
 
 rate_limiter = InMemoryRateLimiter(
     requests_per_second=1,  # Can only make a request once every 1 second
@@ -30,7 +29,7 @@ model = ChatMistralAI(model="ministral-8b-latest",
                       api_key=st.secrets["MISTRAL_API_KEY"], rate_limiter=rate_limiter, temperature=0.63)
 pc = Pinecone(api_key=st.secrets["PINECONE_API_KEY"])
 lnt_index = pc.Index(name="diircb-lntguides")
-embed = MistralAIEmbeddings(api_key=st.secrets["MISTRAL_EMBED_API_KEY"])
+embed = MistralAIEmbeddingsWithPause(api_key=st.secrets["MISTRAL_EMBED_API_KEY"])
 vector_store = PineconeVectorStore(embedding=embed, index=lnt_index)
 
 
@@ -48,7 +47,7 @@ def retrieve(query: str):
     time.sleep(1.0)
     retrieved_docs = vector_store.similarity_search(query, k=3)
     serialized = "\n\n".join(
-        (f"Source: {doc.metadata}\n" f"Content: {doc .page_content}")
+        (f"Source: {doc.metadata}\n" f"Content: {doc.page_content}")
         for doc in retrieved_docs
     )
     return serialized, retrieved_docs
